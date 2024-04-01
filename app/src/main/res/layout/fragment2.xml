@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bc"
+    android:padding="16dp"
+    tools:context=".fragments.Fragment2"
+    >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+            android:src="@drawable/bangunruang_judul"
+            android:layout_marginBottom="10sp"/>
+
+        <LinearLayout
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_kubus"
+                android:clickable="true"
+                android:layout_width="170sp"
+                android:layout_height="170sp"
+                android:src="@drawable/kubus_ic"/>
+
+            <ImageView
+                android:id="@+id/btn_balok"
+                android:layout_marginStart="50dp"
+                android:layout_width="170sp"
+                android:layout_height="170sp"
+                android:src="@drawable/balok_ic"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="50sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_krucut"
+                android:layout_width="170sp"
+                android:layout_height="170sp"
+                android:src="@drawable/krucut_ic"/>
+
+            <ImageView
+                android:id="@+id/btn_bola"
+                android:layout_marginStart="50dp"
+                android:layout_width="170sp"
+                android:layout_height="170sp"
+                android:src="@drawable/bola_ic"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="50sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_tabung"
+                android:layout_width="170sp"
+                android:layout_height="170sp"
+                android:src="@drawable/tabung_ic"/>
+        </LinearLayout>
+
+
+
+</LinearLayout>

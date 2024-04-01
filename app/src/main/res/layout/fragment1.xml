@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/bc"
+        android:padding="16dp"
+        tools:context=".fragments.Fragment1">
+
+        <!-- ImageView untuk judul -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+            android:src="@drawable/bd_judul"
+            android:layout_marginBottom="10sp"/>
+
+        <!-- Baris 1: Persegi dan Persegi Panjang -->
+        <LinearLayout
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_persegi"
+                android:clickable="true"
+                android:layout_width="170sp"
+                android:layout_height="170sp"
+                android:src="@drawable/persegi_ic"/>
+
+            <ImageView
+                android:id="@+id/btn_persegipanjang"
+                android:layout_marginStart="50dp"
+                android:layout_width="170sp"
+                android:layout_height="170sp"
+                android:src="@drawable/ppanjang_ic"/>
+        </LinearLayout>
+
+        <!-- Baris 2: Segitiga dan Lingkaran -->
+        <LinearLayout
+            android:layout_marginTop="50sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_segitiga"
+                android:layout_width="170sp"
+                android:layout_height="170sp"
+                android:src="@drawable/segitiga_ic"/>
+
+            <ImageView
+                android:id="@+id/btn_lingkaran"
+                android:layout_marginStart="50dp"
+                android:layout_width="170sp"
+                android:layout_height="170sp"
+                android:src="@drawable/lingkaran_ic"/>
+        </LinearLayout>
+
+        <!-- Baris 3: Jajar Genjang -->
+        <LinearLayout
+            android:layout_marginTop="50sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_jajargenjang"
+                android:layout_width="170sp"
+                android:layout_height="170sp"
+                android:src="@drawable/ganjar_ic"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

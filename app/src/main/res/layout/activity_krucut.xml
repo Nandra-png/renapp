@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bc"
+    tools:context=".bangunruang.krucut">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="263sp"
+        android:layout_height="192sp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/krucut_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/ibold"
+        android:text="Krucut"
+        android:textColor="#8FE9C4"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+
+    <LinearLayout
+        android:layout_width="380sp"
+        android:layout_height="541sp"
+        android:background="@drawable/bc_calc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/input1"
+            android:layout_marginTop="60sp"
+            android:layout_width="290sp"
+            android:paddingStart="14sp"
+            android:layout_height="60sp"
+            android:textColorHint="#77767676"
+            android:hint="Masukkan Jari Jari"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:background="@drawable/bc_input"/>
+
+        <EditText
+            android:id="@+id/input2"
+            android:layout_marginTop="15sp"
+            android:layout_width="290sp"
+            android:paddingStart="14sp"
+            android:layout_height="60sp"
+            android:textColorHint="#77767676"
+            android:hint="Masukkan Tinggi"
+            android:textSize="18sp"
+            android:inputType="number"
+            android:background="@drawable/bc_input"/>
+
+        <Button
+            android:id="@+id/Calculate"
+            android:layout_marginTop="30sp"
+            android:layout_width="234sp"
+            android:layout_height="50sp"
+            android:text="Calculate!"
+            android:background="@drawable/calc_bc"/>
+
+        <TextView
+            android:id="@+id/hasiluas"
+            android:layout_marginTop="34sp"
+            android:layout_width="293sp"
+            android:text="0"
+            android:fontFamily="@font/ibold"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:layout_height="115sp"
+            android:background="@drawable/result_bc"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20sp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="start">
+
+            <ImageView
+                android:id="@+id/back_btn"
+                android:layout_marginStart="29sp"
+                android:layout_width="53sp"
+                android:layout_height="52sp"
+                android:src="@drawable/back_btn"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

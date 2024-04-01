@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bc"
+    tools:context=".Menudepan">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="331dp"
+        android:layout_height="361dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="39dp"
+        android:src="@drawable/calmain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41pt"
+        android:layout_marginEnd="41pt"
+        android:layout_marginBottom="28dp"
+        android:text="@string/app_welcome"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_start"
+        android:layout_width="301dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/btn_start"
+        app:layout_constraintBottom_toTopOf="@+id/pencets"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/pencets"
+        android:layout_width="58dp"
+        android:layout_height="9dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="176dp"
+        android:layout_marginBottom="26dp"
+        android:src="@drawable/frag_tambahan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
